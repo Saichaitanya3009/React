@@ -25,15 +25,33 @@
 // export default App;
 
 
-import React, { Component } from 'react'
-import CBCPropEx from './propsex/CBCPropEx'
+// import React, { Component } from 'react'
+// import CBCPropEx from './propsex/CBCPropEx'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <CBCPropEx username="Chaithu"/>
-      </div>
-    )
-  }
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <CBCPropEx username="Chaithu"/>
+//       </div>
+//     )
+//   }
+// }
+
+// props.children
+import React from 'react'
+import PropsChildrenex from './propsex/PropsChildrenex'
+import SubChildProps from './propsex/SubChildProps'
+
+const App = () => {
+  return (
+    <div>
+      <PropsChildrenex username="Chaithu" company = "Deloitte">
+        <h1>This data is passing as a props children to child component</h1>
+       <SubChildProps/>
+      </PropsChildrenex>
+    </div>
+  )
 }
+
+export default App
