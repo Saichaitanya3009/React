@@ -111,12 +111,11 @@
 // export default App
 
 import React from 'react'
-import UseEffectEx from './HookExample/UseEffectEx'
-
+import RefExample from './HookExample/RefExample'
 export const App = () => {
   return (
     <div>App
-        <UseEffectEx/>
+        <RefExample/>
     </div>
   )
 }
