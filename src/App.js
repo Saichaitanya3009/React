@@ -80,17 +80,44 @@
 
 // export default App;
 
-import React from 'react'
-import CBCStateEx from './stateexamples/CBCStateEx'
-import FBCStateEx from './stateexamples/FBCStateEx'
+// import React from 'react'
+// import CBCStateEx from './stateexamples/CBCStateEx'
+// import FBCStateEx from './stateexamples/FBCStateEx'
+// import FunctionalComponents from './components/FunctionalComponents'
 
-const App = () => {
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <CBCStateEx/>
+//       <FBCStateEx/> */}
+//       <FunctionalComponents/>
+//     </div>
+//   )
+// }
+
+
+//Code not working bro
+
+// import React from 'react'
+// import FunctionalComponents from './components/FunctionalComponents'
+// function App(){
+//   return(
+//     <div className="App">
+//       <h1 class = 'heading'>Hello</h1>
+//       <h2 class = {}
+//     </div>
+//   )
+// }
+// export default App
+
+import React from 'react'
+import UseEffectEx from './HookExample/UseEffectEx'
+
+export const App = () => {
   return (
-    <div>
-      <CBCStateEx/>
-      <FBCStateEx/>
+    <div>App
+        <UseEffectEx/>
     </div>
   )
 }
-
-export default App;
+export default App
