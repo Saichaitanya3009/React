@@ -1,9 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Logo from './Logo'
+import Menu from './Menu'
+import Styles from "./navbar.module.css";
 
-export default class Navbar extends Component {
-  render() {
-    return (
-      <div className='nav'>Navbar</div>
-    )
-  }
+const Navbar = () => {
+  return (
+    <section id={Styles.navBlock}>
+        <article>
+            <Logo/>
+            <Menu/>
+        </article>
+    </section>
+  )
 }
+
+export default Navbar
